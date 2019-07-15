@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Parnee Noodle
+Theme URI: https://wordpress.org/themes/twentynineteen/
+Author: Navie
+Author URI: https://wordpress.org/
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: parnee noodle
+*/
+
+body{
+	background-image: url('img/statue_processed_30.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	
+}
+
+#amatic{
+	font-family: 'Amatic SC', cursive;
+}
+
+/*index*/
+#button {
+	font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: rgb(46, 44, 44);
+    color: #fff;
+    border-style: none;
+}
+ 
+#button:hover {
+    background-color: rgb(65, 62, 62);
+    color: #fff;
+}
+
+/*footer*/
+.my-gray {
+	color: rgb(46, 44, 44);
+}
+
+/*footer{
+	position: absolute;
+	right: 40px;
+	bottom: 10px;
+}*/
+
+/* navi */
+.navbar ul {
+	list-style: none;
+	float: left;
+}
+
+.navbar ul li{
+	display: inline;
+}
+.navbar ul li a{
+	color:white;
+	background-image: none;
+	font-weight: bold;
+	font-size: 1.4rem;
+	padding: 10px;
+}
+
+
+/*menu*/
+.menu-box {
+	position: relative;
+	box-shadow: 6px 6px 8px -4px rgba(0, 0, 0, 0.15);
+	transition: opacity 0.15s;
+}
+
+.menu-box:hover {
+	opacity: 0.8;
+}
+
+.menu-box .title {
+	font-size: 1.4rem;
+	line-height: 1.6;
+}
+
+.menu-box .price{
+	position: absolute;
+	text-align: right;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 1.1 rem;
+}
+
+.menu-box img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*about*/
+#obachan{
+	transform: rotate(20deg);
+}
+
+#granma{
+	transform: rotate(-8deg);
+}
+
+/*contact*/
+.contact{
+	padding: 80px 0 150px;
+}
+
+.contact-form{
+	width:50%;
+	margin: 50px auto 0;
+}
+
+.contact-form input[type=text],
+.contact-form textarea{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 15px;
+	outline: none;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 0;
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-form textarea{
+	height: 150px;
+}
+
+.contact-form ::placeholder{
+	color: white;
+}
+
+.contact-form input[type=submit]{
+	display: block;
+	width: 200px;
+	margin: 40px auto 0;
+	padding: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+	background-color: transparent;
+	color: white/* rgba(255, 255, 255, 0.6)*/;
+	cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover{
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus{
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+/*access*/
+.gmap {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.gmap iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
